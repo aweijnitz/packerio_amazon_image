@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": ""
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "eu-west-1",
+    "source_ami": "ami-a345c3d4",
+    "instance_type": "t2.micro",
+    "ssh_username": "admin",
+    "ami_name": "packer-example {{timestamp}}"
+  }],
+  "provisioners": [{
+    "type": "shell",
+    "scripts": ["./provisioning/scripts/prepare.sh", "./provisioning/scripts/installBasics.sh"]
+  }, {
+    "type": "shell",
+    "scripts": ["./provisioning/scripts/installJava8.sh", "./provisioning/scripts/installApplications.sh"]
+  }]
+}
+
