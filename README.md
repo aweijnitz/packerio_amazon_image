@@ -23,11 +23,11 @@ In order to generate the keys needed (see [make.sh](make.sh)) do the following i
 ## About the provisioning
 This project uses shell script provisioning, so no need to learn chef or anything. Just basic scripting.
 The scrips are executed in this order
-- Preparation [prepare.sh](prepare.sh)
-- Basic tools and utilities [installBasics.sh](installBasics.sh)
-- Installation of Java8 [installJava8.sh](installJava8.sh)
-- Installation of image domain specific applications (empty, add your stuff here) [installApplications.sh](installApplications.sh)
-- Setup security (firewall etc.) [setupSecurity.sh](setupSecurity.sh)
+- Preparation [prepare.sh](provisioning/scripts/prepare.sh)
+- Basic tools and utilities [installBasics.sh](provisioning/scripts/installBasics.sh)
+- Installation of Java8 [installJava8.sh](provisioning/scripts/installJava8.sh)
+- Installation of image domain specific applications (empty, add your stuff here) [installApplications.sh](provisioning/scripts/installApplications.sh)
+- Setup security (firewall etc.) [setupSecurity.sh](provisioning/scripts/setupSecurity.sh)
 
 
 ## General notes
