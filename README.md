@@ -12,7 +12,7 @@ This is a project that includes all the files and scripts needed to build a basi
 ## Required access keys for Amazon EC2
 *You need an Amazon AWS account to host the final image.*
 
-In order to generate the keys needed (see [make.sh](make.sh)) do the following in Amazon Management Console.
+In order to generate the keys needed (see [make.sh](make.sh)) do the following in the Amazon Management Console.
 
 - Go to [IAM](https://console.aws.amazon.com/iam/home#home) console
 - Create a new user
