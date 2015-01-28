@@ -1,4 +1,4 @@
-# Packer.io image scaffold
+# Packer.io Scaffold
 
 This is a project that includes all the files and scripts needed to build a basic Debian 7 image for Amazon EC2 with Oracle Java 8 on it. The provisioning adds a firewall and auto-banning of failed connections as well. Requires [packer.io](https://packer.io/) installed locally on your computer.
 
