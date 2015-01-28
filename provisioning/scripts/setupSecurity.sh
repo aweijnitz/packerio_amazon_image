@@ -1,6 +1,11 @@
 #!/bin/bash
 
 #
+# SSH blacklist known bad guys
+#
+sudo apt-get install -y openssh-blacklist
+
+#
 # ____ Install Uncomplicated Firewall (frontend to iptables)
 #
 sudo apt-get install -y ufw
@@ -38,4 +43,8 @@ sudo cp /tmp/jail.local /etc/fail2ban/jail.local
 # Start fail2ban
 sudo service fail2ban restart
 
+#
+# Finally make sure it has all the latest patches
+#
+sudo apt-get -y upgrade
 
