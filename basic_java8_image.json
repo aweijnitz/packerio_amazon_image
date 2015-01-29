@@ -21,7 +21,7 @@
     "scripts": ["./provisioning/scripts/installJava8.sh", "./provisioning/scripts/installApplications.sh"]
   }, {
     "type": "shell",
-    "scripts": ["./provisioning/scripts/setupSecurity.sh"]
+    "scripts": ["./provisioning/scripts/setupSecurity.sh", "./provisioning/scripts/setupMonitoring.sh"]
   }]
 }
 
