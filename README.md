@@ -28,7 +28,8 @@ The scrips are executed in this order
 - Installation of Java8 [installJava8.sh](provisioning/scripts/installJava8.sh)
 - Installation of image domain specific applications (empty, add your stuff here) [installApplications.sh](provisioning/scripts/installApplications.sh)
 - Setup security (firewall etc.) [setupSecurity.sh](provisioning/scripts/setupSecurity.sh)
-
+- Add basic resource monitoring using Munin. Note! Does not add a
+  webserver for graph generation/presentation. [setupMonitoring.sh](provisioning/scripts/setupMonitoring.sh)
 
 ## General notes
 I also added some notes about the process [here](http://mildly-interesting.info/blog/2015/01/26/packer-dot-io-for-the-impatient/).
