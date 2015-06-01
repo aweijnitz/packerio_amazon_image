@@ -37,7 +37,7 @@ sudo ufw --force enable
 sudo apt-get install -y fail2ban
 
 # Local config
-sudo cat /etc/fail2ban/jail.conf | sed 's/root@localhost/spolopoly@atex.com/g' > /tmp/jail.local
+sudo cat /etc/fail2ban/jail.conf | sed 's/root@localhost/anders@somedomain.se/g' > /tmp/jail.local
 sudo cp /tmp/jail.local /etc/fail2ban/jail.local
 
 # Start fail2ban
